@@ -13,7 +13,7 @@ number.forEach((numbers) =>
 const sum = document.querySelectorAll('.operator');
 sum.forEach((operate) =>
     operate.addEventListener('click', function () {
-        enable;
+        enable();
         inputOperator(operate.textContent);
         operate.classList.add('pushed');
     }))
@@ -110,6 +110,7 @@ function inputClear() {
     num1 = '';
     num2 = '';
     display.textContent = ' '
+    enable();
 }
 
 function point() {
